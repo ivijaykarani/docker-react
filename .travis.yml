@@ -4,7 +4,7 @@ services:
 
 
 before_install:
-  - docker build -t ivijaykarani/docker-react-f Dockerfile.dev .
+  - docker build -t ivijaykarani/docker-react -f Dockerfile.dev .
 
 script:
   - docker run ivijaykarani/docker-react npm run test -- --coverage
